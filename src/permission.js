@@ -22,8 +22,9 @@ router.beforeEach((to, from, next) => {
     if (whiteList.indexOf(to.path) !== -1) {
       next()
     } else {
-      Message.error('验证失败,请重新登录')
-      // 否则全部重定向到登录页
+      if (to.path !== '/') {
+        Message.error('验证失败,请重新登录')
+      }
       next('/login')
       NProgress.done()
     }

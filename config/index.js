@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {
       "/": {
         // node代理转发的地址修改这里
-        target: "http://192.168.31.160:8080",
+        target: "http://47.105.34.90:8080",
         changeOrigin: true,
         ws: false,
         pathRewrite: {}
