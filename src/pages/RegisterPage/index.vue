@@ -24,7 +24,7 @@
 import { Message } from 'element-ui'
 
 const USERNAME_MIN_LEN = 6
-const PASSWORD_MIN_LEN = 6
+const PASSWORD_MIN_LEN = 5
 
 export default {
 

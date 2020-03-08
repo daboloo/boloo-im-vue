@@ -1,9 +1,9 @@
 import request from '@/utils/request'
 
 export function register (username, password) {
-  let data = { 'userName': username, 'password': password }
+  let data = { 'username': username, 'password': password }
   return request({
-    url: '/chat/register',
+    url: '/chat/auth/register',
     data,
     method: 'post'
   })
